@@ -1,4 +1,4 @@
-INSERT INTO menu(id_menu, nombre, icono, url) VALUES (1, 'Buscar', 'search', '/buscar');
+﻿INSERT INTO menu(id_menu, nombre, icono, url) VALUES (1, 'Buscar', 'search', '/buscar');
 INSERT INTO menu(id_menu, nombre, icono, url) VALUES (2, 'Registrar', 'insert_drive_file', '/consulta');
 INSERT INTO menu(id_menu, nombre, icono, url) VALUES (3, 'Registrar E.', 'insert_drive_file', '/consulta-especial');
 INSERT INTO menu(id_menu, nombre, icono, url) VALUES (4, 'Especialiades', 'star_rate', '/especialidad');
@@ -12,7 +12,6 @@ INSERT INTO menu(id_menu, nombre, icono, url) VALUES (11, 'Roles', 'assessment',
 INSERT INTO menu(id_menu, nombre, icono, url) VALUES (12, 'Asignar Roles a Menu', 'assessment', '/menu-rol');
 INSERT INTO menu(id_menu, nombre, icono, url) VALUES (13, 'Asignar Rol Usuario', 'assessment', '/usuario-rol');
 
-select * from paciente;
 
 INSERT INTO paciente(nombres, apellidos, dni, telefono) VALUES('CARLOS', 'RUIZ', '72302301' , '991855511');
 INSERT INTO paciente(nombres, apellidos, dni, telefono) VALUES('ANDRES', 'RUIZ', '72301302' , '991855512');
@@ -83,12 +82,10 @@ INSERT INTO paciente(nombres, apellidos, dni, telefono) VALUES('DEWI', 'RUIZ', '
 INSERT INTO paciente(nombres, apellidos, dni, telefono) VALUES('KUN', 'RUIZ', '72301384' , '991855575');
 INSERT INTO paciente(nombres, apellidos, dni, telefono) VALUES('AGUERO', 'RUIZ', '72302384' , '991855575');
 
-select * from usuario;
 
-INSERT INTO usuario(id_usuario, nombre, clave, estado) values (1, 'admin', '123', '1');
-INSERT INTO usuario(id_usuario, nombre, clave, estado) values (2, 'jaime', '123', '1');
+INSERT INTO usuario(id_usuario, nombre, clave, estado) values (1, 'admin', '$2a$10$9odJZqAtS1BZBij8v4AjOOTW5mJIQDAh4/85U3lxOBKb0o88FTKzK', '1');--password = 321
+INSERT INTO usuario(id_usuario, nombre, clave, estado) values (2, 'jaime', '$2a$10$9odJZqAtS1BZBij8v4AjOOTW5mJIQDAh4/85U3lxOBKb0o88FTKzK', '1');--passw0rd = 321
 
-select * from Rol;
 INSERT INTO Rol (id_rol, nombre, descripcion) VALUES (1, 'ADMIN', 'Administrador');
 INSERT INTO Rol (id_rol, nombre, descripcion) VALUES (2, 'USER', 'Usuario');
 INSERT INTO Rol (id_rol, nombre, descripcion) VALUES (3, 'DBA', 'Adminsitrador de base de datos');
